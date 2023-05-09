@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script>
+            function test() {
+                alert("버튼이 클릭되었습니다.");
+            }
+        </script>
+    </head>
     <body>
-        <input type="text" ></br>
-        <input type="password"></br>
+        <form action="hello.html" method="post">
+        <input type="text" name="id" size="50" value="1234"disabled ></br>
+        <input type="text" value="초기 데이터" readonly><br/>
+        <input type="password" name="pwd"></br>
         남자 : <input type="radio" name="sex"/>, 여자 : <input type="radio" name="sex" /><br/><!-- 여러개중에 하나만 체크됨.-->
-        사과 : <input type="checkbox" name="fruit"/>, 포도 : <input type="checkbox" name="fruit" /> , 수박 : <input type="checkbox" name="fruit" /><!-- 다중 선택 가능--><br/>
+        사과 : <input type="checkbox" name="fruit" checked/>, 포도 : <input type="checkbox" name="fruit" /> , 수박 : <input type="checkbox" name="fruit" /><!-- 다중 선택 가능--><br/>
         <input type="submit" value="전송 버튼"><br/>
         <input type="reset" value="초기화"><br/>
-        <input type="button" value="일반 버튼"><br/>
+        <input type="button" value="일반 버튼" onclick="test()"><br/>
         <input type="hidden" value="여기는 전달하고자 하는 값을 넣어줍니다. "><br/>
+
+       
+        <label for="txt">
+        <textarea id="txt" rows="7" cols="30" placeholder="입력해라"></textarea>
+        </label>
+        </form>
+    </br>
+        <select>
+            <option>세르니움</option>
+            <option>아르크스</option>
+            <option selected>오디움</option>
+        </select>
+
 
 
 
